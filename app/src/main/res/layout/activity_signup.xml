@@ -69,7 +69,7 @@
       android:layout_marginEnd="88dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/back" />
+      app:srcCompat="@drawable/bacck" />
 
   <TextView
       android:id="@+id/create"
@@ -100,22 +100,13 @@
       android:layout_width="165dp"
       android:layout_height="29dp"
       android:layout_marginStart="56dp"
-      android:layout_marginBottom="24dp"
+      android:layout_marginTop="32dp"
       android:text="Already have an account? "
       android:textColor="@color/black"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/signupbtn" />
 
-  <TextView
-      android:id="@+id/log"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="132dp"
-      android:layout_marginBottom="32dp"
-      android:text="Login"
-      android:textColor="@color/lightred"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent" />
+  // ##########################################
 
 
   <Button
@@ -149,6 +140,18 @@
       android:textSize="20sp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/confirmpassword" />
+
+  <Button
+      android:id="@+id/btnn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="14dp"
+      android:layout_marginEnd="96dp"
+      android:backgroundTint="@color/white"
+      android:text="Login"
+      android:textColor="@color/lightred"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/rectanglee" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

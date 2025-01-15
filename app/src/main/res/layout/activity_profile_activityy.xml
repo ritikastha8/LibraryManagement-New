@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reddd"
+    tools:context=".ProfileActivityy">
+
+
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="778dp"
+        android:layout_height="602dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnmainpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rro" />
+
+    <ImageView
+        android:id="@+id/logoo"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mobilelibrary" />
+
+
+
+    <TextView
+        android:id="@+id/zenlibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="ZenLibrary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoo" />
+
+    <Button
+        android:id="@+id/btnabout"
+        android:layout_width="341dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="46dp"
+        android:text="about"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+    <Button
+        android:id="@+id/btnset"
+        android:layout_width="341dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="50dp"
+        android:text="set"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutt" />
+
+    <Button
+        android:id="@+id/btnpersonal"
+        android:layout_width="332dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="67dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/btnmainpage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnset" />
+
+    <Button
+        android:id="@+id/btnmainpage"
+        android:layout_width="341dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="150dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/aboutt"
+        android:layout_width="378dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:srcCompat="@drawable/aa" />
+
+    <ImageView
+        android:id="@+id/personalinfo"
+        android:layout_width="378dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnmainpage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnset"
+        app:layout_constraintVertical_bias="0.428"
+        app:srcCompat="@drawable/personalinfo" />
+
+    <ImageView
+        android:id="@+id/settingg"
+        android:layout_width="378dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutt"
+        app:srcCompat="@drawable/settingg" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="100dp"
+        android:text="Profile"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aboutustext"
+        android:layout_width="137dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:text="About Us"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/btnabout"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+    <TextView
+        android:id="@+id/settingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="96dp"
+        android:text="Setting"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/btnset"
+        app:layout_constraintTop_toBottomOf="@+id/aboutustext" />
+
+    <TextView
+        android:id="@+id/personalinfotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:text="Personal Information"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/btnpersonal"
+        app:layout_constraintTop_toTopOf="@+id/btnpersonal" />
+
+    <ImageView
+        android:id="@+id/newrectan"
+        android:layout_width="362dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rect" />
+
+    <TextView
+        android:id="@+id/mainpagetext"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Back to Main Page"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btnmainpage"
+        app:layout_constraintTop_toTopOf="@+id/newrectan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

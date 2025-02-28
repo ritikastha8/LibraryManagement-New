@@ -6,7 +6,9 @@
     <color name="yellow">#F8F84D</color>
     <color name="rednew">#8D2E4C</color>
     <color name="reddd">#E14566</color>
+    <color name="lightreddd">#E65976</color>
     <color name="lightred">#E14566</color>
+    <color name="grey">#D9D9D9</color>
 
 
 </resources>

@@ -9,4 +9,24 @@
     android:background="@drawable/rro">
 
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="360dp"
+        android:layout_height="415dp"
+        android:text="Welcome to our Library Management System, a user-friendly Android application built with Kotlin to simplify and enhance your library experience. Our app allows users to borrow and return books, request new books, explore various categories, and manage their library activities efficiently. With an intuitive interface and seamless functionality, we aim to make book management effortless for both readers and librarians. Whether you’re looking for your next read or tracking borrowed books, our system ensures a smooth and organized experience."
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="321dp"
+        android:layout_height="59dp"
+        android:text="About Us"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="38dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

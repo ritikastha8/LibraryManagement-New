@@ -30,17 +30,17 @@ class HomeActivity: AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.request.setOnClickListener {
-            // Navigate to RequestBookActivity
-            val intent = Intent(this, RequestBookActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding.returnBook.setOnClickListener {
-            // Navigate to ReturnBookActivity
-            val intent = Intent(this, ReturnBookActivity::class.java)
-            startActivity(intent)
-        }
+//        binding.request.setOnClickListener {
+//            // Navigate to RequestBookActivity
+//            val intent = Intent(this, RequestBookActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        binding.returnBook.setOnClickListener {
+//            // Navigate to ReturnBookActivity
+//            val intent = Intent(this, ReturnBookActivity::class.java)
+//            startActivity(intent)
+//        }
 
         binding.buttonProfile.setOnClickListener {
             // Navigate to ProfileActivity

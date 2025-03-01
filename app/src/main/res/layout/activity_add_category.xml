@@ -7,4 +7,45 @@
     android:layout_height="match_parent"
     tools:context=".AddCategoryActivity">
 
+    <EditText
+        android:id="@+id/etCategoryTitle"
+        android:layout_width="184dp"
+        android:layout_height="44dp"
+        android:hint="Category Title"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <EditText
+        android:id="@+id/etBookTitle"
+        android:layout_width="182dp"
+        android:layout_height="40dp"
+        android:hint="Book Title"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <Button
+        android:id="@+id/btnAddBook"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:text="Add Book"
+        android:backgroundTint="@color/rednew"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <Button
+        android:id="@+id/btnAddCategory"
+        android:layout_width="162dp"
+        android:layout_height="47dp"
+        android:text="Add Category"
+        android:backgroundTint="@color/rednew"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBooks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

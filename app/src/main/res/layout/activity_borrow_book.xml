@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BorrowBookActivity"
+    android:background="@drawable/borrowbook">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="218dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="21dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+
+        android:hint="Enter username"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <EditText
+        android:id="@+id/bookid"
+        android:layout_width="218dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="21dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+
+        android:hint="Enter Book ID"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <EditText
+        android:id="@+id/bookname"
+        android:layout_width="218dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="21dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+
+        android:hint="Enter Book Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <EditText
+        android:id="@+id/datei"
+        android:layout_width="218dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="21dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+
+        android:hint="Enter Issue Date"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <EditText
+        android:id="@+id/dated"
+        android:layout_width="218dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="21dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+
+        android:hint="Enter Due Date"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <Button
+        android:id="@+id/buttonborrow"
+        android:layout_width="205dp"
+        android:layout_height="67dp"
+        android:backgroundTint="@color/transparent"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

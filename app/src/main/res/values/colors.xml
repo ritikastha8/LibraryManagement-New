@@ -7,6 +7,7 @@
     <color name="rednew">#8D2E4C</color>
     <color name="reddd">#E14566</color>
     <color name="lightred">#E14566</color>
+    <color name="transparent">#00000000</color>
 
 
 </resources>

@@ -41,8 +41,7 @@
         tools:layout_editor_absoluteY="639dp" />
 
     <Button
-        android:id="@+id/Category
-"
+        android:id="@+id/Category"
         android:layout_width="352dp"
         android:layout_height="52dp"
         android:background="transparent"

@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
             val password = binding.etPassword.text.toString().trim()
 
             // Proceed to HomeActivity for any user
-            val intent = Intent(this, HomeActivity::class.java)
+            var intent = Intent(this, HomeActivity::class.java)
 
             // Check if the user is admin and send them to AdminDashboardActivity
             if (username == "admin" && password == "1234") {

@@ -1,14 +1,14 @@
 package com.example.myapplicationlibrary.ViewModel
 
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import com.example.myapplicationlibrary.Model.UserModel
 import com.example.myapplicationlibrary.Repository.UserRepository
 import com.example.myapplicationlibrary.Repository.UserRepositoryImpl
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 
 
 class UserViewModel : ViewModel() {
-    private val userRepository: UserRepository = UserRepositoryImpl()
+    private val userRepository: UserRepository = UserRepositoryImpl() // This should work now
 
     val signupStatus = MutableLiveData<Resource<String>>()
     val loginStatus = MutableLiveData<Resource<String>>()

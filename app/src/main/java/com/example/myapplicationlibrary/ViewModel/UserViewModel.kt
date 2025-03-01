@@ -3,9 +3,14 @@ package com.example.myapplicationlibrary.ViewModel
 import com.example.myapplicationlibrary.Model.UserModel
 import com.example.myapplicationlibrary.Repository.UserRepository
 import com.example.myapplicationlibrary.Repository.UserRepositoryImpl
+
+package com.example.myapplicationlibrary.viewmodel
+
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-
+import com.example.myapplicationlibrary.model.UserModel
+import com.example.myapplicationlibrary.repository.UserRepository
+import com.example.myapplicationlibrary.repository.UserRepositoryImpl
 
 class UserViewModel : ViewModel() {
     private val userRepository: UserRepository = UserRepositoryImpl() // This should work now

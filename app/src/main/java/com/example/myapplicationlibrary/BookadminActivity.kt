@@ -22,6 +22,7 @@ class BookadminActivity : AppCompatActivity() {
         binding = ActivityBookadminBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //
         var repo = BookRepositoryImpl(FirebaseDatabase.getInstance())
         bookViewModel = BookViewModel(repo)
 

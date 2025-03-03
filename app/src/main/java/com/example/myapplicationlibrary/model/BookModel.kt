@@ -28,6 +28,7 @@ data class BookModel (
     override fun describeContents(): Int {
         return 0
     }
+    //
     companion object CREATOR : Parcelable.Creator<BookModel> {
         override fun createFromParcel(parcel: Parcel): BookModel {
             return BookModel(parcel)

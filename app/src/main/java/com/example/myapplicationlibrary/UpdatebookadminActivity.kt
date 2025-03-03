@@ -20,31 +20,23 @@ class UpdatebookadminActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding=ActivityUpdatebookadminBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-//
+        //
         var repo = BookRepositoryImpl(FirebaseDatabase.getInstance())
         bookViewModel=BookViewModel(repo)
         var id : String= intent.getStringExtra("bookid").toString()
-
         //get code
-
         bookViewModel.getBookById(id)
         bookViewModel.books.observe(this){
             binding.updatebooktitleid.setText(it?.booktitleId.toString())
             binding.updatebookname.setText(it?.bookName.toString())
             binding.updatebookdescription.setText(it?.bookdescription.toString())
             binding.updateauthorname.setText(it?.bookauthorname.toString())
-
         }
-
-
         binding.btnupdate.setOnClickListener {
             val newBooktitleId = binding.updatebooktitleid.text.toString().toInt()
             val newBookName = binding.updatebookname.text.toString()
             val newBookDescription = binding.updatebookdescription.text.toString()
             val newauthorname = binding.updateauthorname.text.toString()
-
-
             var updateMap= mutableMapOf<String,Any>()
 
             updateMap["booktitleId"]=newBooktitleId
@@ -56,14 +48,12 @@ class UpdatebookadminActivity : AppCompatActivity() {
                 if(success){
                     Toast.makeText(this@UpdatebookadminActivity,
                         message, Toast.LENGTH_LONG).show()
-
                     finish()
                 }else{
                     Toast.makeText(this@UpdatebookadminActivity,
                         message, Toast.LENGTH_LONG).show()
                 }
             }
-
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

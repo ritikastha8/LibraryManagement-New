@@ -17,7 +17,7 @@
       <SelectionState runConfigName="RequestOutputActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="UpdateRequestActivity">
+      <SelectionState runConfigName="UpdatebookadminActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

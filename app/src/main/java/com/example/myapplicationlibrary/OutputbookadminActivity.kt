@@ -30,14 +30,13 @@ class OutputbookadminActivity : AppCompatActivity() {
 
         var repo = BookRepositoryImpl(FirebaseDatabase.getInstance())
         bookViewModel=BookViewModel(repo)
-
+//
         adapter = BookAdapter(this@OutputbookadminActivity, ArrayList())
         bookViewModel.getAllBooks()
         bookViewModel.allbooks.observe(this){books->
             books?.let{
                 adapter.updateData(it)
             }
-
         }
         bookViewModel.loading.observe(this){loading->
             if(loading){

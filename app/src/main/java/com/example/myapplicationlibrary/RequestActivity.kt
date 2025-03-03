@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase
 class RequestActivity : AppCompatActivity() {
     lateinit var binding: ActivityRequestBinding
     lateinit var requestViewModel: RequestViewModel
-
+//
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,14 +26,9 @@ class RequestActivity : AppCompatActivity() {
         requestViewModel = RequestViewModel(repo)
 
         binding.buttonrequest.setOnClickListener {
-
-
             var requestdescription = binding.editrequest.text.toString()
-
             var model = RequestModel("",requestdescription)
-
             requestViewModel.addRequest(model){
-
                     success,message->
                 if(success){
                     Toast.makeText(this@RequestActivity,
@@ -45,11 +40,9 @@ class RequestActivity : AppCompatActivity() {
                 }else{
                     Toast.makeText(this@RequestActivity,
                         message, Toast.LENGTH_LONG).show()
-
                 }
             }
         }
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

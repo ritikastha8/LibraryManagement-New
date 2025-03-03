@@ -25,7 +25,7 @@ class BookAdapter(val context: Context,
         val authorname: TextView = itemView.findViewById(R.id.authorname)
         val loading : ProgressBar = itemView.findViewById(R.id.progressBarrr)
     }
-
+//
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookAdapter.bookViewHolder {
         val itemView: View = LayoutInflater.from(context)
             .inflate(R.layout.sample_book, parent, false)

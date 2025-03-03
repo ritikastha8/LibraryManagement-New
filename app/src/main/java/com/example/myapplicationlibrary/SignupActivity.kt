@@ -40,7 +40,7 @@ class SignupActivity : AppCompatActivity() {
             }else if(password!=conpassword){
                 Toast.makeText(this@SignupActivity,"Password and Confirm Password should be same",
                     Toast.LENGTH_LONG).show()
-
+//
             }
 //            else{
 //                val intent =Intent(this@SignupActivity,LoginActivityyy::class.java)

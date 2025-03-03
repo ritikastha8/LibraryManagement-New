@@ -12,5 +12,7 @@ interface BookRepository {
     fun getBookById(bookid: String,
                        callback:(BookModel?,Boolean,String)->Unit)
     fun getAllBooks(callback:(List<BookModel>?,Boolean,String)->Unit)
+    //
 }
 
+//

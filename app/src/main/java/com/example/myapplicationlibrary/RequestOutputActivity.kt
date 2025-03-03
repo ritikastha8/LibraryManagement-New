@@ -16,6 +16,7 @@ import com.example.myapplicationlibrary.databinding.ActivityRequestOutputBinding
 import com.example.myapplicationlibrary.viewmodel.RequestViewModel
 import com.google.firebase.database.FirebaseDatabase
 
+//
 class RequestOutputActivity : AppCompatActivity() {
     lateinit var requestViewModel: RequestViewModel
     lateinit var adapter: RequestAdapter
@@ -25,20 +26,14 @@ class RequestOutputActivity : AppCompatActivity() {
         enableEdgeToEdge()
        outputbinding= ActivityRequestOutputBinding.inflate(layoutInflater)
         setContentView(outputbinding.root)
-
         var repo = RequestRepositoryImpl(FirebaseDatabase.getInstance())
         requestViewModel= RequestViewModel(repo)
-
-
         adapter = RequestAdapter(this@RequestOutputActivity,ArrayList())
-
         requestViewModel.getAllRequests()
-
         requestViewModel.allrequests.observe(this){requests->
             requests?.let{
                 adapter.updateData(it)
             }
-
         }
         requestViewModel.loading.observe(this){loading->
             if(loading){
@@ -49,7 +44,6 @@ class RequestOutputActivity : AppCompatActivity() {
         }
         outputbinding.recyclerView2.adapter=adapter
         outputbinding.recyclerView2.layoutManager= LinearLayoutManager(this)
-
         ItemTouchHelper(object:
             ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT or ItemTouchHelper.LEFT){
             override fun onMove(
@@ -59,7 +53,6 @@ class RequestOutputActivity : AppCompatActivity() {
             ): Boolean {
                 TODO("Not yet implemented")
             }
-
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 var id = adapter.getrequestId(viewHolder.adapterPosition)
                 requestViewModel.deleteRequest(id){

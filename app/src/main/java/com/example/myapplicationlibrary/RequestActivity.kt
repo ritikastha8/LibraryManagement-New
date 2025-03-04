@@ -35,7 +35,7 @@ class RequestActivity : AppCompatActivity() {
                         message, Toast.LENGTH_LONG).show()
                     val intent= Intent(
                         this@RequestActivity,
-                        UpdateRequestActivity::class.java)
+                        RequestOutputActivity::class.java)
                     startActivity(intent)
                 }else{
                     Toast.makeText(this@RequestActivity,
@@ -49,7 +49,7 @@ class RequestActivity : AppCompatActivity() {
             insets
         }
     }
-
-
 }
+
+
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/requesttextttt"
+        android:layout_width="408dp"
+        android:layout_height="284dp"
+        android:layout_marginStart="4dp"
+        android:text="Request :\n I hope you are doing well. I would like to suggest adding 'Atomic Habits' by James Clear to our library collection. This book provides practical strategies for building good habits, breaking bad ones, and making small changes that lead to remarkable results. It has been widely praised for its clear, actionable insights and would be a valuable resource for students and readers interested in self-improvement and productivity."
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

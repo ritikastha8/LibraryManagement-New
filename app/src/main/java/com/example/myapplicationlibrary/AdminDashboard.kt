@@ -20,25 +20,25 @@ class AdminDashboard : AppCompatActivity() {
         binding = ActivityAdminDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        // Set click listeners for buttons
-//        binding.addbutton.setOnClickListener {
-//            // Navigate to AddBookActivity
-//            startActivity(Intent(this, AddBookActivity::class.java))
-//        }
+        // Set click listeners for buttons
+        binding.btnaddd.setOnClickListener {
+            // Navigate to AddBookActivity
+            startActivity(Intent(this, BookadminActivity::class.java))
+        }
 
-//        binding.updatebutton.setOnClickListener {
-//            // Navigate to UpdateBookActivity
-//            startActivity(Intent(this, UpdateBookActivity::class.java))
-//        }
+        binding.btnupdatebookdetails.setOnClickListener {
+            // Navigate to UpdateBookActivity
+            startActivity(Intent(this, UpdatebookadminActivity::class.java))
+        }
 
-        binding.addcategorybutton.setOnClickListener {
+        binding.Addcategoryid.setOnClickListener {
             // Navigate to AddCategoryActivity
             startActivity(Intent(this, AddCategoryActivity::class.java))
         }
 
-//        binding.viewrequestbutton.setOnClickListener {
-//            // Navigate to ViewRequestActivity
-//            startActivity(Intent(this, ViewRequestActivity::class.java))
-//        }
+        binding.viewrequestbttn.setOnClickListener {
+            // Navigate to ViewRequestActivity
+            startActivity(Intent(this, ViewRequestAdmin::class.java))
+        }
     }
 }

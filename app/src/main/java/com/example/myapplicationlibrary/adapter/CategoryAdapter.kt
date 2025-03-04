@@ -2,7 +2,7 @@ package com.example.myapplicationlibrary.adapter
 
 import com.example.myapplicationlibrary.Model.AddCategoryModel
 
-package com.example.myapplicationlibrary.ui.adapter
+
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -11,17 +11,19 @@ import com.example.c35c.model.BookModel
 import com.example.c35c.repository.BookRepositoryImpl
 import com.example.myapplicationlibrary.databinding.ActivityBookadminBinding
 import com.example.myapplicationlibrary.viewmodel.BookViewModel
+import com.google.firebase.FirebaseApp
 import com.google.firebase.database.FirebaseDatabase
 
 class BookadminActivity : AppCompatActivity() {
     lateinit var binding: ActivityBookadminBinding
     lateinit var bookViewModel: BookViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivityBookadminBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        FirebaseApp.initializeApp(this)
         //
         var repo = BookRepositoryImpl(FirebaseDatabase.getInstance())
         bookViewModel = BookViewModel(repo)

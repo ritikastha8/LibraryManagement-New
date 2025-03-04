@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -41,12 +42,33 @@ android {
 }
 
 dependencies {
+//    implementation("com.google.firebase:firebase-auth:20.0.2")
+//    implementation(libs.firebase.firestore)
+//
+//
+//
+//    testImplementation(libs.junit)
+//    androidTestImplementation(libs.androidx.junit)
+//    androidTestImplementation(libs.androidx.espresso.core)
+//    implementation("com.cloudinary:cloudinary-android:2.1.0")
+//    implementation("com.squareup.picasso:picasso:2.8")
+//    implementation(libs.kotlin.stdlib)
+//    implementation(libs.coroutines.core)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+
+    implementation("com.google.firebase:firebase-auth:20.0.2")
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.firestore)
+
+
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

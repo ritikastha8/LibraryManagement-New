@@ -2,6 +2,7 @@ package com.example.myapplicationlibrary
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplicationlibrary.AdminDashboard
@@ -38,6 +39,7 @@ class LoginActivity : AppCompatActivity() {
         // Handle sign-up click
         binding.btnLogin.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
+            Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
         binding.tvSignUp.setOnClickListener {

@@ -54,6 +54,7 @@ class SignupActivity : AppCompatActivity() {
         }
         bind.signupbtn.setOnClickListener{
             val intent =Intent(this@SignupActivity,LoginActivity::class.java)
+            Toast.makeText(this, "Signup Successful!", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
 

@@ -32,3 +32,4 @@ class AddCategoryViewModel : ViewModel() {
         class Loading<T> : Resource<T>()
     }
 }
+

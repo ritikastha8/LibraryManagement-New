@@ -28,14 +28,14 @@ class AdminLoginActivity : AppCompatActivity() {
             val username = binding.etadminUsername.text.toString().trim()
             val password = binding.etadminPassword.text.toString().trim()
 
-            // Validate input fields
+            // Validate input fields.
             if (username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please enter both username and password", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             // Check if the username and password match the admin credentials
-            if (username == "admin" && password == "1234") {
+            if (username == "admin@gmail.com" && password == "1234") {
 
                 startActivity(Intent(this, AdminDashboard::class.java))
                 finish() // Close the login activity
